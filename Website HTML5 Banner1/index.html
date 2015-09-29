@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Website HTML5 Banner- Hamdan</title>
+        <meta name="description" content="This banner breaks into pieces when you hover over it - reforming when you're not playing with it!">
+	    <meta name="author" content="Hamdan">
+	    
+	    <!--Styles-->
+	    <link href='css/style-01.css' media='screen' rel='stylesheet' type='text/css'/>
+	    <!--Scripts-->
+	    <script type="text/javascript" src="js/banner.js"></script>
+	   	<script type="text/javascript" src="/js/analytics.js"></script>	     
+	    <script>
+			window.onload = function() {
+	
+				var banner = new Banner();
+				banner.initialize('canvas-banner');
+			
+			}	
+		</script>
+		
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+	  		(function() {
+	    		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    		po.src = 'https://apis.google.com/js/plusone.js';
+	    		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  		})();
+		</script>
+		
+	</head>
+	<body>
+		<header>
+			<canvas id="canvas-banner"></canvas>
+		</header>
+		
+	</body>		
+</html>
